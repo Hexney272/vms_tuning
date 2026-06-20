@@ -6,32 +6,32 @@
 --    ╚═╝    ╚═════╝ ╚═╝  ╚═══╝╚═╝╚═╝  ╚═══╝ ╚═════╝     ╚═╝     ╚═╝╚══════╝╚═╝  ╚═══╝ ╚═════╝ 
 Config.TuningMenu = {
     ["mainmenu"] = {
-        label = "Tuning Menu",
+        label = "Tuning Menü",
         onReturnOpen = nil, -- don't change it
         options = {
-            {label = "Visual Upgrades", icon = "visual.webp", selectOpen = 'visual'},
-            {label = "Mechanical Upgrades", icon = "mechanical.webp", selectOpen = 'mechanical'},
-            {label = "Locator", icon = "locator.webp", modType = 'locator', tax = 'tuning', priceMultiplier = 0.08},
-            {label = "Clean Vehicle", icon = "clean.webp", action = 'clean', tax = 'tuning', price = 500},
-            {label = "Repair Vehicle", icon = "repair.webp", action = 'repair', tax = 'tuning', price = 2000},
+            {label = "Vizuális fejlesztések", icon = "visual.webp", selectOpen = 'visual'},
+            {label = "Teljesítmény fejlesztések", icon = "mechanical.webp", selectOpen = 'mechanical'},
+            {label = "Nyomkövető", icon = "locator.webp", modType = 'locator', tax = 'tuning', priceMultiplier = 0.08},
+            {label = "Jármű mosás", icon = "clean.webp", action = 'clean', tax = 'tuning', price = 500},
+            {label = "Jármű javítás", icon = "repair.webp", action = 'repair', tax = 'tuning', price = 2000},
         },
     },
 
     ["visual"] = {
-        label = "Visual Upgrades",
+        label = "Vizuális fejlesztések",
         onReturnOpen = 'mainmenu',
         options = {
-            {label = 'Body', icon = 'body.webp', selectOpen = 'body'},
-            {label = 'Inside', icon = 'inside.webp', selectOpen = 'inside'},
-            {label = 'Paint', icon = 'paint.webp', selectOpen = 'paint'},
-            {label = 'Wheels', icon = 'wheels.webp', selectOpen = 'wheels'},
-            {label = 'License Plate', icon = 'licenseplate.webp', selectOpen = 'licenseplate'},
+            {label = 'Karosszéria', icon = 'body.webp', selectOpen = 'body'},
+            {label = 'Belső tér', icon = 'inside.webp', selectOpen = 'inside'},
+            {label = 'Festés', icon = 'paint.webp', selectOpen = 'paint'},
+            {label = 'Kerekek', icon = 'wheels.webp', selectOpen = 'wheels'},
+            {label = 'Rendszámtábla', icon = 'licenseplate.webp', selectOpen = 'licenseplate'},
             {label = 'Xenon', icon = 'xenon.webp', selectOpen = 'xenon'},
-            {label = 'Neons', icon = 'neons.webp', modType = 'neonColor', type = 'colorpicker', tax = 'tuning', price = 10000},
-            {label = 'Vehicle Livery', icon = 'wrap.webp', modType = 'modLivery', tax = 'tuning', priceMultiplier = 0.08},
-            {label = 'Window Tint', icon = 'windowtint.webp', modType = 'windowTint', cameraOnBone = 'window_lf', tax = 'tuning', priceMultiplier = 0.08},
-            {label = 'Horn', icon = 'horn.webp', modType = 14, tax = 'tuning', priceMultiplier = 0.05},
-            {label = 'Extras', icon = 'extra.webp', modType = 'extras'}
+            {label = 'Neon', icon = 'neons.webp', modType = 'neonColor', type = 'colorpicker', tax = 'tuning', price = 10000},
+            {label = 'Matrica', icon = 'wrap.webp', modType = 'modLivery', tax = 'tuning', priceMultiplier = 0.08},
+            {label = 'Ablakfólia', icon = 'windowtint.webp', modType = 'windowTint', cameraOnBone = 'window_lf', tax = 'tuning', priceMultiplier = 0.08},
+            {label = 'Kürt', icon = 'horn.webp', modType = 14, tax = 'tuning', priceMultiplier = 0.05},
+            {label = 'Extrák', icon = 'extra.webp', modType = 'extras'}
         }
     },
     ["body"] = {
@@ -66,70 +66,70 @@ Config.TuningMenu = {
         }
     },
     ["inside"] = {
-        title = 'INSIDE',
+        title = 'BELSŐ TÉR',
         onReturnOpen = 'visual',
         options = {
-            {label = 'Ornaments', modType = 28, tax = 'tuning', priceMultiplier = 0.075, cameraOnBone = 'engine', cameraOffset = {0.15, -1.85, 0.485}},
-            {label = 'Dashboard', modType = 29, tax = 'tuning', priceMultiplier = 0.095, cameraOnBone = 'engine', cameraOffset = {0.15, -1.85, 0.485}},
-            {label = 'Dial', modType = 30, tax = 'tuning', priceMultiplier = 0.05, cameraOnBone = 'engine', cameraOffset = {-0.55, -1.5, 0.485}},
-            {label = 'Door Speaker', modType = 31, tax = 'tuning', priceMultiplier = 0.065, openDoors = {0}, cameraOnBone = 'door_dside_f', cameraOffset = {-0.35, -3.5, 1.3}},
-            {label = 'Seat', modType = 32, tax = 'tuning', priceMultiplier = 0.035},
-            {label = 'Steering Wheel', modType = 33, tax = 'tuning', priceMultiplier = 0.019, cameraOnBone = 'engine', cameraOffset = {-0.55, -1.5, 0.265}},
-            {label = 'Shifter Leaver', modType = 34, tax = 'tuning', priceMultiplier = 0.021, cameraOnBone = 'engine', cameraOffset = {0.15, -1.85, 0.485}},
+            {label = 'Díszek', modType = 28, tax = 'tuning', priceMultiplier = 0.075, cameraOnBone = 'engine', cameraOffset = {0.15, -1.85, 0.485}},
+            {label = 'Műszerfal', modType = 29, tax = 'tuning', priceMultiplier = 0.095, cameraOnBone = 'engine', cameraOffset = {0.15, -1.85, 0.485}},
+            {label = 'Óralap', modType = 30, tax = 'tuning', priceMultiplier = 0.05, cameraOnBone = 'engine', cameraOffset = {-0.55, -1.5, 0.485}},
+            {label = 'Ajtó hangszóró', modType = 31, tax = 'tuning', priceMultiplier = 0.065, openDoors = {0}, cameraOnBone = 'door_dside_f', cameraOffset = {-0.35, -3.5, 1.3}},
+            {label = 'Ülések', modType = 32, tax = 'tuning', priceMultiplier = 0.035},
+            {label = 'Kormány', modType = 33, tax = 'tuning', priceMultiplier = 0.019, cameraOnBone = 'engine', cameraOffset = {-0.55, -1.5, 0.265}},
+            {label = 'Váltókar', modType = 34, tax = 'tuning', priceMultiplier = 0.021, cameraOnBone = 'engine', cameraOffset = {0.15, -1.85, 0.485}},
         },
     },
     ["paint"] = {
-        label = 'Paint',
+        label = 'Festés',
         onReturnOpen = 'visual',
         options = {
-            {label = 'Primary Color', icon = 'paint.webp', selectOpen = 'color1'},
-            {label = 'Secondary Color', icon = 'paint.webp', selectOpen = 'color2'},
-            {label = 'Primary Color Type', icon = 'paint.webp', modType = 'paintTypePrimary', tax = 'tuning', priceMultiplier = 0.12},
-            {label = 'Secondary Color Type', icon = 'paint.webp', modType = 'paintTypeSecondary', tax = 'tuning', priceMultiplier = 0.1},
-            {label = 'Pearlescent', icon = 'paint.webp', modType = 'pearlescentColor', type = "indexes"},
-            {label = 'Dashboard', icon = 'paint.webp', modType = 'dashboardColor', type = "indexes"},
-            {label = 'Interior', icon = 'paint.webp', modType = 'interiorColor', type = "indexes"},
+            {label = 'Elsődleges szín', icon = 'paint.webp', selectOpen = 'color1'},
+            {label = 'Másodlagos szín', icon = 'paint.webp', selectOpen = 'color2'},
+            {label = 'Elsődleges festék típus', icon = 'paint.webp', modType = 'paintTypePrimary', tax = 'tuning', priceMultiplier = 0.12},
+            {label = 'Másodlagos festék típus', icon = 'paint.webp', modType = 'paintTypeSecondary', tax = 'tuning', priceMultiplier = 0.1},
+            {label = 'Gyöngyház', icon = 'paint.webp', modType = 'pearlescentColor', type = "indexes"},
+            {label = 'Műszerfal szín', icon = 'paint.webp', modType = 'dashboardColor', type = "indexes"},
+            {label = 'Belső szín', icon = 'paint.webp', modType = 'interiorColor', type = "indexes"},
         },
     },
     ["wheels"] = {
-        label = 'Wheels',
+        label = 'Kerekek',
         onReturnOpen = 'visual',
         options = {
-            {label = 'Wheels Type', icon = 'wheel_sports.webp', selectOpen = 'wheels_type'},
-            {label = 'Wheels Color', icon = 'paint.webp', modType = 'wheelColor', type = 'indexes', tax = 'tuning', priceMultiplier = 0.16},
-            {label = 'Smoke Color', icon = 'wheel_smoke.webp', modType = 'tyreSmokeColor', type = 'colorpicker', tax = 'tuning', price = 5000},
-            {label = 'Wheels Stance', icon = 'wheels_stance.webp', modType = 'wheelsStance', type = 'wheelsstance', tax = 'tuning', price = 25000, dependence = Config.UseStanceSystem},
-            {label = 'Wheels Size', icon = 'wheels_size.webp', modType = 'wheelSize', type = 'wheelsize', tax = 'tuning', price = 25000, dependence = Config.UseWheelsSize},
-            {label = 'Wheels Width', icon = 'wheels_width.webp', modType = 'wheelWidth', type = 'wheelwidth', tax = 'tuning', price = 25000, dependence = Config.UseWheelsWidth},
-            {label = 'Drift Tires', icon = 'drift_tyres.webp', modType = 'driftTyres', tax = 'tuning', priceMultiplier = {0.25}},
+            {label = 'Felni típus', icon = 'wheel_sports.webp', selectOpen = 'wheels_type'},
+            {label = 'Felni szín', icon = 'paint.webp', modType = 'wheelColor', type = 'indexes', tax = 'tuning', priceMultiplier = 0.16},
+            {label = 'Gumifüst szín', icon = 'wheel_smoke.webp', modType = 'tyreSmokeColor', type = 'colorpicker', tax = 'tuning', price = 5000},
+            {label = 'Kerék állás', icon = 'wheels_stance.webp', modType = 'wheelsStance', type = 'wheelsstance', tax = 'tuning', price = 25000, dependence = Config.UseStanceSystem},
+            {label = 'Kerékméret', icon = 'wheels_size.webp', modType = 'wheelSize', type = 'wheelsize', tax = 'tuning', price = 25000, dependence = Config.UseWheelsSize},
+            {label = 'Kerékszélesség', icon = 'wheels_width.webp', modType = 'wheelWidth', type = 'wheelwidth', tax = 'tuning', price = 25000, dependence = Config.UseWheelsWidth},
+            {label = 'Drift gumik', icon = 'drift_tyres.webp', modType = 'driftTyres', tax = 'tuning', priceMultiplier = {0.25}},
         },
     },
     ['wheels_type'] = {
-        label = 'Wheels Type',
+        label = 'Felni típus',
         onReturnOpen = 'wheels',
         options = {
-            {label = "Sports", icon = 'wheel_sports.webp', modType = 23, wheelType = 0, tax = 'tuning', priceMultiplier = 0.2, cameraOnBone = 'wheel_lf', cameraOffset = {-1.0, 0.75, 0.25}},
-            {label = "Muscle", icon = 'wheel_muscle.webp', modType = 23, wheelType = 1, tax = 'tuning', priceMultiplier = 0.12, cameraOnBone = 'wheel_lf', cameraOffset = {-1.0, 0.75, 0.25}},
+            {label = "Sport", icon = 'wheel_sports.webp', modType = 23, wheelType = 0, tax = 'tuning', priceMultiplier = 0.2, cameraOnBone = 'wheel_lf', cameraOffset = {-1.0, 0.75, 0.25}},
+            {label = "Izom", icon = 'wheel_muscle.webp', modType = 23, wheelType = 1, tax = 'tuning', priceMultiplier = 0.12, cameraOnBone = 'wheel_lf', cameraOffset = {-1.0, 0.75, 0.25}},
             {label = "Lowrider", icon = 'wheel_lowrider.webp', modType = 23, wheelType = 2, tax = 'tuning', priceMultiplier = 0.22, cameraOnBone = 'wheel_lf', cameraOffset = {-1.0, 0.75, 0.25}},
             {label = "SUV", icon = 'wheel_suv.webp', modType = 23, wheelType = 3, tax = 'tuning', priceMultiplier = 0.14, cameraOnBone = 'wheel_lf', cameraOffset = {-1.0, 0.75, 0.25}},
-            {label = "Off Road", icon = 'wheel_offroad.webp', modType = 23, wheelType = 4, tax = 'tuning', priceMultiplier = 0.1, cameraOnBone = 'wheel_lf', cameraOffset = {-1.0, 0.75, 0.25}},
+            {label = "Terepjáró", icon = 'wheel_offroad.webp', modType = 23, wheelType = 4, tax = 'tuning', priceMultiplier = 0.1, cameraOnBone = 'wheel_lf', cameraOffset = {-1.0, 0.75, 0.25}},
             {label = "Tuning", icon = 'wheel_tuning.webp', modType = 23, wheelType = 5, tax = 'tuning', priceMultiplier = 0.14, cameraOnBone = 'wheel_lf', cameraOffset = {-1.0, 0.75, 0.25}},
-            {label = "Motorcycle", icon = 'wheel_motorcycle.webp', modType = 23, wheelType = 6, tax = 'tuning', priceMultiplier = 0.1, cameraOnBone = 'wheel_lf', cameraOffset = {-1.0, 0.75, 0.25}},
-            {label = "High End", icon = 'wheel_highend.webp', modType = 23, wheelType = 7, tax = 'tuning', priceMultiplier = 0.2, cameraOnBone = 'wheel_lf', cameraOffset = {-1.0, 0.75, 0.25}},
+            {label = "Motor", icon = 'wheel_motorcycle.webp', modType = 23, wheelType = 6, tax = 'tuning', priceMultiplier = 0.1, cameraOnBone = 'wheel_lf', cameraOffset = {-1.0, 0.75, 0.25}},
+            {label = "Prémium", icon = 'wheel_highend.webp', modType = 23, wheelType = 7, tax = 'tuning', priceMultiplier = 0.2, cameraOnBone = 'wheel_lf', cameraOffset = {-1.0, 0.75, 0.25}},
             {label = "Bennys Originals", icon = 'wheel_orginals.webp', modType = 23, wheelType = 8, tax = 'tuning', priceMultiplier = 0.2, cameraOnBone = 'wheel_lf', cameraOffset = {-1.0, 0.75, 0.25}},
             {label = "Bennys Bespoke", icon = 'wheel_bespoke.webp', modType = 23, wheelType = 9, tax = 'tuning', priceMultiplier = 0.2, cameraOnBone = 'wheel_lf', cameraOffset = {-1.0, 0.75, 0.25}},
-            {label = "Street", icon = 'wheel_street.webp', modType = 23, wheelType = 11, tax = 'tuning', priceMultiplier = 0.2, cameraOnBone = 'wheel_lf', cameraOffset = {-1.0, 0.75, 0.25}},
-            {label = "Track", icon = 'wheel_track.webp', modType = 23, wheelType = 12, tax = 'tuning', priceMultiplier = 0.2, cameraOnBone = 'wheel_lf', cameraOffset = {-1.0, 0.75, 0.25}},
+            {label = "Utcai", icon = 'wheel_street.webp', modType = 23, wheelType = 11, tax = 'tuning', priceMultiplier = 0.2, cameraOnBone = 'wheel_lf', cameraOffset = {-1.0, 0.75, 0.25}},
+            {label = "Pálya", icon = 'wheel_track.webp', modType = 23, wheelType = 12, tax = 'tuning', priceMultiplier = 0.2, cameraOnBone = 'wheel_lf', cameraOffset = {-1.0, 0.75, 0.25}},
         },
     },
     ["licenseplate"] = {
-        label = "License Plate",
+        label = "Rendszámtábla",
         onReturnOpen = 'visual',
         options = {
-            {label = 'Change Numbers', modType = 'customPlateNumbers', type = 'customlicenseplate', tax = 'tuning', price = 120000},
-            {label = 'Type', modType = 25, tax = 'tuning', priceMultiplier = 0.02, cameraPointDirection = 'rear', cameraPointOffset = vec(0.0, 0.3, 0.2), cameraDirection = 'rear-left', cameraOffset = vec(0.2, -1.45, 0.2)},
-            {label = 'Color', modType = 'plateIndex', tax = 'tuning', priceMultiplier = 0.01, cameraPointDirection = 'rear', cameraPointOffset = vec(0.0, 0.3, 0.2), cameraDirection = 'rear-left', cameraOffset = vec(0.2, -1.45, 0.2)},
-            {label = 'Holder', modType = 26, tax = 'tuning', priceMultiplier = 0.08, cameraPointDirection = 'front', cameraPointOffset = vec(0.0, -0.3, 0.2), cameraDirection = 'front-right', cameraOffset = vec(-0.2, 1.45, 0.2)},
+            {label = 'Egyedi rendszám', modType = 'customPlateNumbers', type = 'customlicenseplate', tax = 'tuning', price = 120000},
+            {label = 'Típus', modType = 25, tax = 'tuning', priceMultiplier = 0.02, cameraPointDirection = 'rear', cameraPointOffset = vec(0.0, 0.3, 0.2), cameraDirection = 'rear-left', cameraOffset = vec(0.2, -1.45, 0.2)},
+            {label = 'Szín', modType = 'plateIndex', tax = 'tuning', priceMultiplier = 0.01, cameraPointDirection = 'rear', cameraPointOffset = vec(0.0, 0.3, 0.2), cameraDirection = 'rear-left', cameraOffset = vec(0.2, -1.45, 0.2)},
+            {label = 'Tartó', modType = 26, tax = 'tuning', priceMultiplier = 0.08, cameraPointDirection = 'front', cameraPointOffset = vec(0.0, -0.3, 0.2), cameraDirection = 'front-right', cameraOffset = vec(-0.2, 1.45, 0.2)},
         }
     },
     ["xenon"] = {
@@ -137,39 +137,39 @@ Config.TuningMenu = {
         onReturnOpen = 'visual',
         options = {
             {label = 'Xenon', img = 'xenon.webp', modType = 22, tax = 'tuning', priceMultiplier = {0.2}, cameraOnBone = 'bumper_f', cameraOffset = {-2.6, 4.0, 0.65}},
-            {label = 'Indexed', icon = 'colors-indexed.webp', modType = 'xenonColor', tax = 'tuning', priceMultiplier = 0.02, cameraOnBone = 'bumper_f', cameraOffset = {-2.6, 4.0, 0.65}},
+            {label = 'Szín', icon = 'colors-indexed.webp', modType = 'xenonColor', tax = 'tuning', priceMultiplier = 0.02, cameraOnBone = 'bumper_f', cameraOffset = {-2.6, 4.0, 0.65}},
             -- {label = 'RGB', icon = 'colors-rgb.webp', modType = 'xenonColor', type = 'colorpicker', tax = 'tuning', price = 10000, cameraOnBone = 'bumper_f', cameraOffset = {-2.6, 4.0, 0.65}}, -- RGB Xenons are not synchronized on the server between players
         }
     },
 
     ["color1"] = {
-        label = "Primary Color",
+        label = "Elsődleges szín",
         onReturnOpen = 'paint',
         options = {
-            {label = 'Indexed', icon = 'colors-indexed.webp', modType = 'color1', type = "indexes"},
+            {label = 'Paletta', icon = 'colors-indexed.webp', modType = 'color1', type = "indexes"},
             {label = 'RGB', icon = 'colors-rgb.webp', modType = 'color1', type = 'colorpicker', tax = 'tuning', price = 10000},
         }
     },
     ["color2"] = {
-        label = "Secondary Color",
+        label = "Másodlagos szín",
         onReturnOpen = 'paint',
         options = {
-            {label = 'Indexed', icon = 'colors-indexed.webp', modType = 'color2', type = "indexes"},
+            {label = 'Paletta', icon = 'colors-indexed.webp', modType = 'color2', type = "indexes"},
             {label = 'RGB', icon = 'colors-rgb.webp', modType = 'color2', type = 'colorpicker', tax = 'tuning', price = 10000},
         }
     },
     ["mechanical"] = {
-        label = "Mechanical Upgrades",
+        label = "Teljesítmény fejlesztések",
         onReturnOpen = 'mainmenu',
         options = {
-            {label = 'Armor', icon = 'armor.webp', modType = 16, tax = 'tuning', priceMultiplier = {0.05, 0.1, 0.15, 0.2, 0.25, 0.3}},
-            {label = 'Engine', icon = 'engine.webp', modType = 11, tax = 'tuning', priceMultiplier = {0.1, 0.15, 0.2, 0.25, 0.3, 0.35}},
-            {label = 'Brakes', icon = 'brakes.webp', modType = 12, tax = 'tuning', priceMultiplier = {0.075, 0.125, 0.175, 0.225, 0.25}},
-            {label = 'Transmission', icon = 'transmission.webp', modType = 13, tax = 'tuning', priceMultiplier = {0.08, 0.16, 0.24, 0.32, 0.38}},
-            {label = 'Suspension', icon = 'suspension.webp', modType = 15, tax = 'tuning', priceMultiplier = {0.02, 0.04, 0.06, 0.08, 0.1, 0.12}},
-            {label = 'Custom Suspension Height', icon = 'suspension.webp', modType = 'suspensionHeight', type = 'suspensionheight', tax = 'tuning', price = 8000, dependence = Config.UseSuspensionHeight},
-            {label = 'Turbo', icon = 'turbo.webp', modType = 18, tax = 'tuning', priceMultiplier = {0.45}},
-            {label = 'Engine Swap', icon = 'engineswap.webp', modType = 'engineSwap', cameraPointDirection = 'rear', cameraPointOffset = vec(0.0, 0.3, 0.2), cameraDirection = 'rear-left', cameraOffset = vec(0.2, -1.45, 0.2), dependence = Config.UseEngineSwaps},
+            {label = 'Páncélzat', icon = 'armor.webp', modType = 16, tax = 'tuning', priceMultiplier = {0.05, 0.1, 0.15, 0.2, 0.25, 0.3}},
+            {label = 'Motor', icon = 'engine.webp', modType = 11, tax = 'tuning', priceMultiplier = {0.1, 0.15, 0.2, 0.25, 0.3, 0.35}},
+            {label = 'Fékek', icon = 'brakes.webp', modType = 12, tax = 'tuning', priceMultiplier = {0.075, 0.125, 0.175, 0.225, 0.25}},
+            {label = 'Váltó', icon = 'transmission.webp', modType = 13, tax = 'tuning', priceMultiplier = {0.08, 0.16, 0.24, 0.32, 0.38}},
+            {label = 'Futómű', icon = 'suspension.webp', modType = 15, tax = 'tuning', priceMultiplier = {0.02, 0.04, 0.06, 0.08, 0.1, 0.12}},
+            {label = 'Egyedi futómű magasság', icon = 'suspension.webp', modType = 'suspensionHeight', type = 'suspensionheight', tax = 'tuning', price = 8000, dependence = Config.UseSuspensionHeight},
+            {label = 'Turbó', icon = 'turbo.webp', modType = 18, tax = 'tuning', priceMultiplier = {0.45}},
+            {label = 'Phantom Motorcsere', icon = 'engineswap.webp', modType = 'engineSwap', cameraPointDirection = 'rear', cameraPointOffset = vec(0.0, 0.3, 0.2), cameraDirection = 'rear-left', cameraOffset = vec(0.2, -1.45, 0.2), dependence = Config.UseEngineSwaps},
         }
     },
 }
