@@ -347,6 +347,28 @@ SV.addMoney = function(xPlayer, moneyType, amount)
 end
 
 SV.removeMoney = function(xPlayer, moneyType, amount)
+    -- ═══ RealRPG RC pont integráció ═══
+    -- Ha az összeg megegyezik egy RC pont árkategóriával, RealCoin-ból vonjuk le
+    local rcPrices = {
+        [300] = true,   -- Neon (300 RC)
+        [1200] = true,  -- Phantom tuning szint (1200 RC)
+        [1500] = true,  -- Motorcsere (1500 RC)
+    }
+    if rcPrices[amount] then
+        local identifier = xPlayer.getIdentifier()
+        local currentRC = MySQL.Sync.fetchScalar('SELECT realcoins FROM users WHERE identifier = ?', { identifier }) or 0
+        if currentRC >= amount then
+            MySQL.Async.execute('UPDATE users SET realcoins = realcoins - ? WHERE identifier = ?', { amount, identifier })
+            -- Frissítjük a kliens dashboard egyenlegét
+            TriggerClientEvent('dashboard:updatePremiumBalance', xPlayer.source, currentRC - amount)
+            return true
+        else
+            -- Nincs elég RC – error notify
+            Config.Notification('Nincs elég Real Coinod! (' .. amount .. ' RC szükséges)', 5000, 'error')
+            return false
+        end
+    end
+    -- Normál Ft fizetés
     if Config.Core == "ESX" then
         local type = moneyType == "cash" and 'money' or 'bank'
         xPlayer.removeAccountMoney(type, amount)
