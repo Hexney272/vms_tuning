@@ -357,7 +357,7 @@ window.addEventListener('message', function(event) {
         $('.management-menu div[data-type="main"] div[data-type="total-tuned"] .title').html(`${storeData.data.totalTuned}`);
 
         // Total Earned - loader:
-        $('.management-menu div[data-type="main"] div[data-type="total-earned"] .title').html(`${translation.currency} ${number.format(storeData.data.totalEarned)}`);
+        $('.management-menu div[data-type="main"] div[data-type="total-earned"] .title').html(`${number.format(storeData.data.totalEarned)} ${translation.currency}`);
 
         // Missions - Loader:
         let missionsData = loadMissions(storeData.missions);
@@ -459,7 +459,7 @@ window.addEventListener('message', function(event) {
         $('.management-menu div[data-type="main"] div[data-type="total-tuned"] .title').html(`${storeData.data.totalTuned}`);
 
         // Total Earned - loader:
-        $('.management-menu div[data-type="main"] div[data-type="total-earned"] .title').html(`${translation.currency} ${number.format(storeData.data.totalEarned)}`);
+        $('.management-menu div[data-type="main"] div[data-type="total-earned"] .title').html(`${number.format(storeData.data.totalEarned)} ${translation.currency}`);
 
         // Balance - loader:
         if (useBuildInBalance) {
@@ -580,7 +580,7 @@ window.addEventListener('message', function(event) {
                                 <div class="title">${mapLevelName(value.label)}</div>
                                 ${value.description && `<div class="description">${value.description}</div>` || ''}
                             </div>
-                            ${value.price && `<div class="price">${translation.currency}${!useCityHallIncludedTaxes && value.priceWithTax != undefined && number.format(value.priceWithTax) || number.format(value.price)}</div>` || ''}
+                            ${value.price && `<div class="price">${!useCityHallIncludedTaxes && value.priceWithTax != undefined && number.format(value.priceWithTax) || number.format(value.price)} ${translation.currency}</div>` || ''}
                             <div class="to-select ${value.isCurrent && 'selected' || ''}"
                                 ${key && `data-id="${key}"` || ``}
                                 ${value.action != undefined && `data-action="${value.action}"` || ``} 
@@ -615,8 +615,8 @@ window.addEventListener('message', function(event) {
                     <div class="listed-item">
                         <div class="name">${value.modLabel && `${value.modLabel} - ` || ''}${mapLevelName(value.label)}</div>
                         ${item.discount &&
-                            `<div class="price">${translation.currency}${number.format((!useCityHallIncludedTaxes && value.priceWithTax != undefined && value.priceWithTax || value.price)*((100-item.discount)/100))}</div><div class="price discounted">${translation.currency}${!useCityHallIncludedTaxes && value.priceWithTax != undefined && number.format(value.priceWithTax) || number.format(value.price)}</div>` ||
-                            `<div class="price">${translation.currency}${!useCityHallIncludedTaxes && value.priceWithTax != undefined && number.format(value.priceWithTax) || number.format(value.price)}</div>`}
+                            `<div class="price">${number.format((!useCityHallIncludedTaxes && value.priceWithTax != undefined && value.priceWithTax || value.price)*((100-item.discount)/100))} ${translation.currency}</div><div class="price discounted">${!useCityHallIncludedTaxes && value.priceWithTax != undefined && number.format(value.priceWithTax) || number.format(value.price)} ${translation.currency}</div>` ||
+                            `<div class="price">${!useCityHallIncludedTaxes && value.priceWithTax != undefined && number.format(value.priceWithTax) || number.format(value.price)} ${translation.currency}</div>`}
                         <div class="remove" data-modtype="${value.modType}" ${value.extraId && `data-extraid="${value.extraId}"` || ''}><i class="fa-solid fa-xmark"></i></div>
                     </div>
                 `)
@@ -628,12 +628,12 @@ window.addEventListener('message', function(event) {
                 <div class="footer-name"><i class="fa-solid fa-chevron-left"></i></div>
             </div>
             <div class="footer-pay-button" onclick="footer('pay_options')">
-                <div class="footer-name">${translation.tuningmenu.total_price} ${translation.currency}${item.discount && number.format(item.totalPrice*((100-item.discount)/100)) || number.format(item.totalPrice)}</div>
+                <div class="footer-name">${translation.tuningmenu.total_price} ${item.discount && number.format(item.totalPrice*((100-item.discount)/100)) || number.format(item.totalPrice)} ${translation.currency}</div>
             </div>
         `)
     } else if (item.action == "updateListOptions") {
         $('.tuning-menu .footer .footer-pay-button').html(`
-            <div class="footer-name">${translation.tuningmenu.total_price} ${translation.currency}${number.format(item.totalPrice)}</div>
+            <div class="footer-name">${translation.tuningmenu.total_price} ${number.format(item.totalPrice)} ${translation.currency}</div>
         `)
     } else if (item.action == "openInstallation") {
         installationMarginTop = 0
