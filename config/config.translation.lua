@@ -1,6 +1,6 @@
 -- ▀█▀ █▀▄ ▄▀▄ █▄ █ ▄▀▀ █   ▄▀▄ ▀█▀ ██▀
 --  █  █▀▄ █▀█ █ ▀█ ▄██ █▄▄ █▀█  █  █▄▄
-Config.Language = 'EN' -- 'EN' / 'CZ' / 'DE' / 'FR' / 'ES' / 'PT' / 'PL' / 'TR' / 'IT'
+Config.Language = 'HU' -- 'EN' / 'CZ' / 'DE' / 'FR' / 'ES' / 'PT' / 'PL' / 'TR' / 'IT' / 'HU'
 
 Config.Translate = {
     ['EN'] = {
@@ -2846,6 +2846,322 @@ Config.Translate = {
         ['null_replacement.modTank'] = 'Tank %s',
         ['null_replacement.modWindows'] = 'Windows %s',
         ['null_replacement.modLightbar'] = 'Light Bar %s',
+    },
+    ['HU'] = {
+        ['notify.wait'] = "Várj a következő művelet előtt...",
+        
+        ['notify.you_are_not_owner'] = "Nem vagy műhely tulajdonos, nem teheted ezt.",
+
+        ['announcement.cityhall'] = "Városháza",
+
+        ['notify.employees:no_players_around'] = "Nincs játékos a közelben.",
+        ['notify.employees:player_is_offline'] = "Nem teheted, a játékos nem elérhető.",
+        ['notify.employees:player_is_too_far_away'] = "A játékos túl messze van a felvételhez.",
+        ['notify.employees:player_is_already_employed'] = "Ez a játékos már alkalmazott ebben a műhelyben.",
+        ['notify.employees:player_is_not_employed'] = "Ez a játékos nem alkalmazott ebben a műhelyben.",
+        ['notify.employees:must_be_unemployed'] = "Ez a játékos már dolgozik máshol.",
+        ['notify.employees:you_employee_hired'] = "Új alkalmazottat vettél fel!",
+        ['notify.employees:awarded_bonus'] = "$%s bónuszt adtál egy alkalmazottnak.",
+        ['notify.employees:received_bonus'] = "$%s bónuszt kaptál a műhelytől, ahol dolgozol.",
+
+        ['notify.balance:withdraw'] = "$%s-t vettél ki a cég kasszájából.",
+        ['notify.balance:deposit'] = "$%s-t helyeztél el a cég széfjébe.",
+        ['notify.balance:you_dont_have_that_money'] = "Nincs ennyi pénzed...",
+        ['notify.balance:store_dont_have_that_money'] = "A műhelynek nincs ennyi pénze...",
+
+        ['notify.discounts:copied_code'] = "Kedvezménykód másolva..",
+
+        ['notify.mission:no_mission_available'] = "Jelenleg nincs elérhető megrendelés, gyere vissza később...",
+
+        ['progressbar.mission:conversation_with_customer'] = "Beszélgetés az ügyféllel",
+        ['help.mission.conversation_with_customer'] = "Nyomd meg a ~INPUT_CONTEXT~ gombot a beszélgetéshez",
+        ['target.mission.conversation_with_customer'] = "Beszélj az ügyféllel",
+        ['help.mission.collect_money'] = "Nyomd meg a ~INPUT_CONTEXT~ gombot a pénz átvételéhez",
+        ['target.mission.collect_money'] = "Pénz átvétele",
+        ['help.mission.complete_the_mission'] = "Nyomd meg a ~INPUT_CONTEXT~ gombot a megrendelés befejezéséhez",
+
+        ['help.mission:open_hood'] = "Nyomd meg a ~INPUT_CONTEXT~ gombot a motorháztető nyitásához",
+        ['help.mission:close_hood'] = "Nyomd meg a ~INPUT_CONTEXT~ gombot a motorháztető zárásához",
+
+        ['help.mission:open_trunk'] = "Nyomd meg a ~INPUT_CONTEXT~ gombot a csomagtartó nyitásához",
+        ['help.mission:close_trunk'] = "Nyomd meg a ~INPUT_CONTEXT~ gombot a csomagtartó zárásához",
+
+        ['help.mission:diagnose_problem'] = "~INPUT_CONTEXT~ Hiba diagnosztizálása",
+        ['progressbar.mission:diagnose_problem'] = "Hiba diagnosztizálása...",
+
+        ['notify.mission:start_work'] = "Megtudtad az ügyféltől mi történt, kezdj el dolgozni..",
+        ['notify.mission:return_to_the_workshop'] = "Térj vissza a műhelybe a megrendelés befejezéséhez.",
+        ['notify.mission:money_collected'] = "%s$ fizetést kaptál.",
+
+        ['progressbar.mission:opening_hood'] = "Motorháztető nyitása",
+        ['notify.mission:opened_hood'] = "Kinyitottad a motorháztetőt, most diagnosztizáld a problémát.",
+
+        ['target.mission:open_hood'] = "Motorháztető nyitása",
+        ['target.mission:open_trunk_doors'] = "Csomagtartó nyitása",
+
+        ['target.mission:diagnose_problem'] = "Hiba diagnosztizálása",
+
+        ['target.mission:take_wheel'] = "Kerék felvétele",
+        ['target.mission:install_wheel'] = "Kerék felszerelése",
+
+        ['target.mission:get_oil'] = "Olaj felvétele",
+        ['target.mission:add_oil'] = "Olaj feltöltése",
+
+        ['target.mission:fix_battery'] = "Kábelek tisztítása",
+
+        -- Kerék probléma:
+        ['help.mission:get_wheel'] = "~INPUT_CONTEXT~ Kerék felvétele",
+        ['progressbar.mission:taking_wheel'] = "Kerék felvétele",
+        ['notify.mission:you_taken_wheel'] = "Felvetted a pótkereket. Szereld fel az ügyfél autójára.",
+        ['help.mission:install_wheel'] = "~INPUT_CONTEXT~ Kerék felszerelése",
+        ['progressbar.mission:installing_wheel'] = "Kerék felszerelése...",
+        ['notify.mission:you_installed_wheel'] = "Felszerelted a pótkereket, zárd be a furgon csomagtartóját.",
+
+        -- Olaj probléma:
+        ['notify.mission:diagnosed_oil'] = "Olajhiányt diagnosztizáltál, menj a járművedhez és vegyél olajat.",
+        ['progressbar.mission:taking_oil'] = "Olaj felvétele",
+        ['help.mission:get_oil'] = "~INPUT_CONTEXT~ Olaj felvétele",
+        ['notify.mission:you_taken_oil'] = "Töltsd fel az olajat az ügyfél járművébe.",
+        ['help.mission:add_oil'] = "~INPUT_CONTEXT~ Olaj feltöltése",
+        ['progressbar.mission:refilling_oil'] = "Olaj feltöltése",
+        ['notify.mission:you_added_oil'] = "Feltöltötted az olajat, zárd be a motorháztetőt.",
+
+        -- Akkumulátor probléma:
+        ['help.mission:fix_battery'] = "~INPUT_CONTEXT~ Akkumulátor kábelek tisztítása",
+        ['notify.mission:diagnosed_battery'] = "Szennyeződést diagnosztizáltál az akkumulátor kábeleken, tisztítsd meg.",
+        ['progressbar.mission:fixing_battery'] = "Akkumulátor kábelek tisztítása",
+        ['notify.mission:cleaned_battery'] = "Megtisztítottad a kábeleket, zárd be a motorháztetőt.",
+
+        -- Üzemanyag hiány:
+        ['help.mission:enter_to_vehicle'] = "Szállj be a járműbe",
+        ['notify.mission:diagnosed_lack_of_fuel'] = "A műszerfalon láttad, hogy nincs üzemanyag. Vegyél egy kannát a járművedből.",
+        ['help.mission:get_jerry_can'] = "~INPUT_CONTEXT~ Kanna felvétele",
+        ['progressbar.mission:taking_jerry_can'] = "Kanna felvétele",
+        ['target.mission:get_jerry_can'] = "Kanna felvétele",
+        ['notify.mission:you_taken_jerry_can'] = "Felvetted a kannát. Töltsd fel az ügyfél járművét.",
+        ['help.mission:refuel_vehicle'] = "~INPUT_CONTEXT~ Jármű tankolása",
+        ['target.mission:refuel_vehicle'] = "Jármű tankolása",
+        ['progressbar.mission:refueling_vehicle'] = "Jármű tankolása",
+        ['notify.mission:refueled_vehicle'] = "Feltankoltad a járművet, zárd be a furgon csomagtartóját.",
+
+        ['notify.mission:closed_hood'] = "Bezártad a motorháztetőt, zárd be a furgon csomagtartóját.",
+        ['notify.mission:closed_hood_salary'] = "Bezártad a motorháztetőt, vedd át a fizetésed.",
+        ['target.mission:close_hood'] = "Motorháztető zárása",
+
+        ['target.mission:close_trunk_doors'] = "Csomagtartó zárása",
+        ['notify.mission:closed_trunk'] = "Vedd át a fizetésed",
+
+        ['notify.mission:mission_completed_inform_the_customer'] = "Megrendelés kész, tájékoztasd az ügyfelet.",
+
+        ['3dtext.open_tuning'] = "Tuning Műhely",
+
+        ['help.open_tuning'] = "Nyomd meg a ~INPUT_CONTEXT~ gombot a Tuning megnyitásához",
+        ['help.open_bossmenu'] = "Nyomd meg a ~INPUT_CONTEXT~ gombot a Főnök Menü megnyitásához",
+
+        ['progressbar.painting'] = "Jármű festése: %s",
+        ['progressbar.installation_part'] = "Beszerelés: %s",
+        ['progressbar.installation_jack'] = "Emelő felszerelése",
+        ['progressbar.clean'] = "Jármű mosása",
+        ['progressbar.repair'] = "Jármű javítása",
+
+        ['target.tuning_point'] = {
+            icon = 'fa-solid fa-toolbox',
+            label = 'Tuning'
+        },
+        ['target.bossmenu'] = {
+            icon = 'fa-solid fa-dollar-sign',
+            label = 'Főnök Menü'
+        },
+        ['target.get_part'] = {
+            icon = 'fa-solid fa-hand',
+            label = 'Alkatrész felvétele'
+        },
+        ['target.uninstall_part'] = {
+            icon = 'fa-solid fa-wrench',
+            label = 'Alkatrész leszerelése'
+        },
+        ['target.install_part'] = {
+            icon = 'fa-solid fa-wrench',
+            label = 'Alkatrész felszerelése'
+        },
+        ['target.get_stand'] = {
+            icon = 'fa-solid fa-hand',
+            label = 'Állvány felvétele'
+        },
+        ['target.install_stand'] = {
+            icon = 'fa-solid fa-wrench',
+            label = 'Állvány felszerelése'
+        },
+        ['target.get_jacks'] = {
+            icon = 'fa-solid fa-hand',
+            label = 'Emelő felvétele'
+        },
+        ['target.install_jacks'] = {
+            icon = 'fa-solid fa-wrench',
+            label = 'Emelő felszerelése'
+        },
+
+        ['notify.client_have_enought_money'] = "Nincs elég pénzed.<br>A tuning kérés visszavonva.",
+        ['notify.you_sent_request'] = "Kérésed elküldve a szerelőnek, várd meg a választ.",
+        ['notify.you_already_sent_request'] = "Már küldtél kérést a szerelőnek, várd meg a választ.",
+        ['notify.no_tuners_nearby'] = "Nincs szerelő a közeledben.",
+        ['notify.vehicle_must_be_empty'] = "Nem lehetnek utasok a járműben tuning közben.",
+        ['notify.player_selected_is_not_tuner'] = "A kiválasztott játékos nem szerelő ebben a műhelyben.",
+        ['notify.tuner_accepted_your_request'] = "Szerelő [%s] elfogadta a tuning kérésed.",
+        ['notify.tuner_rejected_your_request'] = "Szerelő [%s] elutasította a tuning kérésed.",
+
+        ['notify.no_players_nearby'] = "Nincs játékos a közeledben.",
+        ['notify.you_sent_bill'] = "Számlát adtál a játékosnak.",
+        ['notify.already_paying_another_bill'] = "%s játékos már fizet egy másik számlát.",
+
+        ['notify.paid_tuning'] = "$%s-t kaptál a tuningért.",
+        ['notify.enought_money'] = "Nincs elég pénzed.",
+        ['notify.society_enought_money'] = "A cégnek nincs elég pénze.",
+
+        ['notify.discount_code_is_currently_using'] = "A kedvezménykód jelenleg használatban van, várj egy kicsit.",
+        ['notify.generated_discount_code'] = "Kedvezménykód generálva: %s a(z) %s műhelyhez -%s, %s használatra.",
+        ['notify.removed_discount_code'] = "Kedvezménykód eltávolítva: %s.",
+
+        ['notify.licenseplate_already_exist'] = "Az egyedi rendszám már foglalt, válassz másikat.",
+
+        ['menu.title.tune_request'] = "Alkatrész beszerelési kérés: %s",
+        ['menu.element.tune_request_accept'] = "Elfogadás",
+        ['menu.element.tune_request_reject'] = "Elutasítás",
+
+        ['title.tuning_menu'] = 'Tuning Menü',
+        ['option.default'] = 'Gyári',
+        ['option.none'] = 'Nincs',
+        ['option.livery'] = 'Matrica %s',
+        ['option.xenon'] = 'Xenon',
+        ['option.turbo'] = 'Turbó',
+        ['option.locator'] = 'Nyomkövető',
+        ['option.drift_tyres'] = 'Drift gumik',
+        ['option.extra'] = 'Extra',
+        ['option.extra_with_id'] = 'Extra %s',
+        ['option.enabled'] = 'Bekapcsolva',
+        ['option.disabled'] = 'Kikapcsolva',
+        ['option.level'] = '%s. szint',
+        ['paint_type'] = {
+            [0] = "Normál",
+            [1] = "Metálfényű",
+            [2] = "Gyöngyház",
+            [3] = "Matt",
+            [4] = "Fém",
+            [5] = "Króm"
+        },
+        ['plate_index'] = {
+            [0] = "Alap San Andreas",
+            [1] = "Fekete",
+            [2] = "Kék",
+            [3] = "Modern San Andreas",
+            [4] = "SA Mentesített",
+            [5] = "North Yankton",
+            [6] = "e-Cola",
+            [7] = "Las Venturas",
+            [8] = "Liberty City",
+            [9] = "LS Car Meet",
+            [10] = "LS Panic",
+            [11] = "LS Pounders",
+            [12] = "Sprunk"
+        },
+        ['windows_tints'] = {
+            [1] = "Teljesen sötét",
+            [2] = "Sötét füst",
+            [3] = "Világos füst",
+            [4] = "Limuzin",
+            [5] = "Zöld"
+        },
+        ['horns'] = {
+            [-1] = "Alap kürt",
+            [0] = "Kamion kürt",
+            [1] = "Rendőr kürt",
+            [2] = "Bohóc kürt",
+            [3] = "Zenés kürt 1",
+            [4] = "Zenés kürt 2",
+            [5] = "Zenés kürt 3",
+            [6] = "Zenés kürt 4",
+            [7] = "Zenés kürt 5",
+            [8] = "Szomorú harsona",
+            [9] = "Klasszikus kürt 1",
+            [10] = "Klasszikus kürt 2",
+            [11] = "Klasszikus kürt 3",
+            [12] = "Klasszikus kürt 4",
+            [13] = "Klasszikus kürt 5",
+            [14] = "Klasszikus kürt 6",
+            [15] = "Klasszikus kürt 7",
+            [16] = "Hangsor - Do",
+            [17] = "Hangsor - Re",
+            [18] = "Hangsor - Mi",
+            [19] = "Hangsor - Fa",
+            [20] = "Hangsor - Sol",
+            [21] = "Hangsor - La",
+            [22] = "Hangsor - Ti",
+            [23] = "Hangsor - Do",
+            [24] = "Jazz kürt 1",
+            [25] = "Jazz kürt 2",
+            [26] = "Jazz kürt 3",
+            [27] = "Jazz kürt ismétlő",
+            [28] = "Himnusz 1",
+            [29] = "Himnusz 2",
+            [30] = "Himnusz 3",
+            [31] = "Himnusz 4",
+            [32] = "Klasszikus 8 ismétlő",
+            [33] = "Klasszikus 9 ismétlő",
+            [34] = "Klasszikus 10 ismétlő",
+            [35] = "Klasszikus kürt 8",
+            [36] = "Klasszikus kürt 9",
+            [37] = "Klasszikus kürt 10",
+            [38] = "Temetési ismétlő",
+            [39] = "Temetési",
+            [40] = "Hátborzongató ismétlő",
+            [41] = "Hátborzongató",
+            [42] = "San Andreas ismétlő",
+            [43] = "San Andreas",
+            [44] = "Liberty City ismétlő",
+            [45] = "Liberty City",
+            [46] = "Ünnepi 1 ismétlő",
+            [47] = "Ünnepi 1",
+            [48] = "Ünnepi 2 ismétlő",
+            [49] = "Ünnepi 2",
+            [50] = "Ünnepi 3 ismétlő",
+            [51] = "Ünnepi 3"
+        },
+        ['null_replacement.modSpoilers'] = 'Spoiler %s',
+        ['null_replacement.modFrontBumper'] = 'Első lökhárító %s',
+        ['null_replacement.modRearBumper'] = 'Hátsó lökhárító %s',
+        ['null_replacement.modSideSkirt'] = 'Küszöb %s',
+        ['null_replacement.modExhaust'] = 'Kipufogó %s',
+        ['null_replacement.modFrame'] = 'Váz %s',
+        ['null_replacement.modGrille'] = 'Hűtőrács %s',
+        ['null_replacement.modHood'] = 'Motorháztető %s',
+        ['null_replacement.modFender'] = 'Sárvédő %s',
+        ['null_replacement.modRightFender'] = 'Jobb sárvédő %s',
+        ['null_replacement.modRoof'] = 'Tető %s',
+        ['null_replacement.modFrontWheels'] = 'Felni %s',
+        ['null_replacement.modBackWheels'] = 'Felni %s',
+        ['null_replacement.modPlateHolder'] = 'Rendszámtartó %s',
+        ['null_replacement.modVanityPlate'] = 'Díszrendszám %s',
+        ['null_replacement.modTrimA'] = 'Díszléc A %s',
+        ['null_replacement.modOrnaments'] = 'Díszek %s',
+        ['null_replacement.modDashboard'] = 'Műszerfal %s',
+        ['null_replacement.modDial'] = 'Óralap %s',
+        ['null_replacement.modDoorSpeaker'] = 'Hangszóró %s',
+        ['null_replacement.modSeats'] = 'Ülések %s',
+        ['null_replacement.modSteeringWheel'] = 'Kormány %s',
+        ['null_replacement.modShifterLeavers'] = 'Váltókar %s',
+        ['null_replacement.modAPlate'] = 'A lemez %s',
+        ['null_replacement.modSpeakers'] = 'Hangszóró %s',
+        ['null_replacement.modTrunk'] = 'Csomagtartó %s',
+        ['null_replacement.modHydrolic'] = 'Hidraulika %s',
+        ['null_replacement.modEngineBlock'] = 'Motorblokk %s',
+        ['null_replacement.modAirFilter'] = 'Légszűrő %s',
+        ['null_replacement.modStruts'] = 'Lengéscsillapító %s',
+        ['null_replacement.modArchCover'] = 'Kerékjárat borítás %s',
+        ['null_replacement.modAerials'] = 'Antenna %s',
+        ['null_replacement.modTrimB'] = 'Díszléc B %s',
+        ['null_replacement.modTank'] = 'Tank %s',
+        ['null_replacement.modWindows'] = 'Ablak %s',
+        ['null_replacement.modLightbar'] = 'Fényhíd %s',
     }
 }
 
