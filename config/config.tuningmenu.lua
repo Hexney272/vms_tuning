@@ -169,6 +169,10 @@ Config.TuningMenu = {
             {label = 'Futómű', icon = 'suspension.webp', modType = 15, tax = 'tuning', priceMultiplier = {0.02, 0.04, 0.06}},
             {label = 'Egyedi futómű magasság', icon = 'suspension.webp', modType = 'suspensionHeight', type = 'suspensionheight', tax = 'tuning', price = 8000, dependence = Config.UseSuspensionHeight},
             {label = 'Turbó', icon = 'turbo.webp', modType = 18, tax = 'tuning', priceMultiplier = {0.45}},
+            {label = 'Phantom Motor (1200 Real Coin)', icon = 'engine.webp', modType = 11, tax = 'tuning', price = 1200},
+            {label = 'Phantom Fékek (1200 Real Coin)', icon = 'brakes.webp', modType = 12, tax = 'tuning', price = 1200},
+            {label = 'Phantom Váltó (1200 Real Coin)', icon = 'transmission.webp', modType = 13, tax = 'tuning', price = 1200},
+            {label = 'Phantom Futómű (1200 Real Coin)', icon = 'suspension.webp', modType = 15, tax = 'tuning', price = 1200},
             {label = 'Motorcsere (1500 Real Coin)', icon = 'engineswap.webp', modType = 'engineSwap', cameraPointDirection = 'rear', cameraPointOffset = vec(0.0, 0.3, 0.2), cameraDirection = 'rear-left', cameraOffset = vec(0.2, -1.45, 0.2), dependence = Config.UseEngineSwaps},
         }
     },
