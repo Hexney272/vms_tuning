@@ -27,7 +27,7 @@ Config.TuningMenu = {
             {label = 'Kerekek', icon = 'wheels.webp', selectOpen = 'wheels'},
             {label = 'Rendszámtábla', icon = 'licenseplate.webp', selectOpen = 'licenseplate'},
             {label = 'Xenon', icon = 'xenon.webp', selectOpen = 'xenon'},
-            {label = 'Neon', icon = 'neons.webp', modType = 'neonColor', type = 'colorpicker', tax = 'tuning', price = 10000},
+            {label = 'Neon (300 Real Coin)', icon = 'neons.webp', modType = 'neonColor', type = 'colorpicker', tax = 'tuning', price = 300},
             {label = 'Matrica', icon = 'wrap.webp', modType = 'modLivery', tax = 'tuning', priceMultiplier = 0.08},
             {label = 'Ablakfólia', icon = 'windowtint.webp', modType = 'windowTint', cameraOnBone = 'window_lf', tax = 'tuning', priceMultiplier = 0.08},
             {label = 'Kürt', icon = 'horn.webp', modType = 14, tax = 'tuning', priceMultiplier = 0.05},
@@ -163,13 +163,13 @@ Config.TuningMenu = {
         onReturnOpen = 'mainmenu',
         options = {
             {label = 'Páncélzat', icon = 'armor.webp', modType = 16, tax = 'tuning', priceMultiplier = {0.05, 0.1, 0.15, 0.2, 0.25, 0.3}},
-            {label = 'Motor', icon = 'engine.webp', modType = 11, tax = 'tuning', priceMultiplier = {0.1, 0.15, 0.2, 0.25, 0.3, 0.35}},
-            {label = 'Fékek', icon = 'brakes.webp', modType = 12, tax = 'tuning', priceMultiplier = {0.075, 0.125, 0.175, 0.225, 0.25}},
-            {label = 'Váltó', icon = 'transmission.webp', modType = 13, tax = 'tuning', priceMultiplier = {0.08, 0.16, 0.24, 0.32, 0.38}},
-            {label = 'Futómű', icon = 'suspension.webp', modType = 15, tax = 'tuning', priceMultiplier = {0.02, 0.04, 0.06, 0.08, 0.1, 0.12}},
+            {label = 'Motor', icon = 'engine.webp', modType = 11, tax = 'tuning', priceMultiplier = {0.1, 0.15, 0.2, 0.25}},
+            {label = 'Fékek', icon = 'brakes.webp', modType = 12, tax = 'tuning', priceMultiplier = {0.075, 0.125, 0.175, 0.225}},
+            {label = 'Váltó', icon = 'transmission.webp', modType = 13, tax = 'tuning', priceMultiplier = {0.08, 0.16, 0.24, 0.32}},
+            {label = 'Futómű', icon = 'suspension.webp', modType = 15, tax = 'tuning', priceMultiplier = {0.02, 0.04, 0.06, 0.08}},
             {label = 'Egyedi futómű magasság', icon = 'suspension.webp', modType = 'suspensionHeight', type = 'suspensionheight', tax = 'tuning', price = 8000, dependence = Config.UseSuspensionHeight},
             {label = 'Turbó', icon = 'turbo.webp', modType = 18, tax = 'tuning', priceMultiplier = {0.45}},
-            {label = 'Phantom Motorcsere', icon = 'engineswap.webp', modType = 'engineSwap', cameraPointDirection = 'rear', cameraPointOffset = vec(0.0, 0.3, 0.2), cameraDirection = 'rear-left', cameraOffset = vec(0.2, -1.45, 0.2), dependence = Config.UseEngineSwaps},
+            {label = 'Motorcsere (1500 Real Coin)', icon = 'engineswap.webp', modType = 'engineSwap', cameraPointDirection = 'rear', cameraPointOffset = vec(0.0, 0.3, 0.2), cameraDirection = 'rear-left', cameraOffset = vec(0.2, -1.45, 0.2), dependence = Config.UseEngineSwaps},
         }
     },
 }

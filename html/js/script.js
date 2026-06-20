@@ -1,5 +1,27 @@
 let translation = {};
 
+// ═══ RealRPG egyedi tuning szint nevek ═══
+// A locked szerver kód "Szint 1", "Szint 2" stb. formátumban küldi a neveket.
+// Ez a mapping lecseréli őket egyedi nevekre a NUI-ban.
+const levelNameMap = {
+    'Szint 1': 'Sufni',
+    'Szint 2': 'Utcai',
+    'Szint 3': 'Verseny',
+    'Szint 4': 'Phantom',
+    'Szint 5': 'Phantom+',
+    'Szint 6': 'Phantom Elite',
+    // Fallback English (ha nem HU nyelvet használ)
+    'Level 1': 'Sufni',
+    'Level 2': 'Utcai',
+    'Level 3': 'Verseny',
+    'Level 4': 'Phantom',
+    'Level 5': 'Phantom+',
+    'Level 6': 'Phantom Elite',
+};
+function mapLevelName(label) {
+    return levelNameMap[label] || label;
+}
+
 let direction = "left"
 
 var number = Intl.NumberFormat('en-US', {minimumFractionDigits: 0});
@@ -555,7 +577,7 @@ window.addEventListener('message', function(event) {
                                 <div class="option-coloricon" style="background: ${value.colorIcon}"></div>` || ''
                             }
                             <div class="option-name">
-                                <div class="title">${value.label}</div>
+                                <div class="title">${mapLevelName(value.label)}</div>
                                 ${value.description && `<div class="description">${value.description}</div>` || ''}
                             </div>
                             ${value.price && `<div class="price">${translation.currency}${!useCityHallIncludedTaxes && value.priceWithTax != undefined && number.format(value.priceWithTax) || number.format(value.price)}</div>` || ''}
@@ -591,7 +613,7 @@ window.addEventListener('message', function(event) {
             if (value) {
                 $('.selected-options').append(`
                     <div class="listed-item">
-                        <div class="name">${value.modLabel && `${value.modLabel} - ` || ''}${value.label}</div>
+                        <div class="name">${value.modLabel && `${value.modLabel} - ` || ''}${mapLevelName(value.label)}</div>
                         ${item.discount &&
                             `<div class="price">${translation.currency}${number.format((!useCityHallIncludedTaxes && value.priceWithTax != undefined && value.priceWithTax || value.price)*((100-item.discount)/100))}</div><div class="price discounted">${translation.currency}${!useCityHallIncludedTaxes && value.priceWithTax != undefined && number.format(value.priceWithTax) || number.format(value.price)}</div>` ||
                             `<div class="price">${translation.currency}${!useCityHallIncludedTaxes && value.priceWithTax != undefined && number.format(value.priceWithTax) || number.format(value.price)}</div>`}
@@ -654,7 +676,7 @@ window.addEventListener('message', function(event) {
         if (item.status == 'add') {
             $('.installations-menu > .options').append(`
                 <div data-modtype="${item.modType}">
-                    <div class="label">${item.modLabel && `${item.modLabel} - ` || ''}${item.label}</div>
+                    <div class="label">${item.modLabel && `${item.modLabel} - ` || ''}${mapLevelName(item.label)}</div>
                     <div class="icon">
                         <i class="fa-regular fa-square"></i>
                     </div>
