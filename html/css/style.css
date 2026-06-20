@@ -2,8 +2,8 @@
     --primary-text-color: #fffffe;
     --secondary-text-color: #94a1b2;
 
-    --discount-btn-color: #43d13e30;
-    --discount-btn-color-hover: #43d13e69;
+    --discount-btn-color: #d4a84330;
+    --discount-btn-color-hover: #d4a84369;
 
     --back-btn-color: #d1d1d130;
     --back-btn-color-hover: #92929269;
@@ -11,43 +11,43 @@
     --close-btn-color: #c51b1b60;
     --close-btn-color-hover: #7a0c0c73;
 
-    --ok-color: #4cdb28b3;
-    --ok-color-hover: #32b623b3;
-    --ok-color-active: #2a7116b3;
+    --ok-color: #d4a843b3;
+    --ok-color-hover: #a37f2ab3;
+    --ok-color-active: #7a5f1fb3;
     
     --remove-btn-color: #c51b1b60;
     --remove-btn-color-hover: #7a0c0c73;
 
-    --main-color: #573cfa;
-    --main-color-hover: #452ec7;
-    --main-color-active: #29159c;
+    --main-color: #d4a843;
+    --main-color-hover: #a37f2a;
+    --main-color-active: #7a5f1f;
 
-    --tuning-part-to-select: #573cfa;
-    --tuning-part-to-select-hover: #452ec7;
-    --tuning-part-to-select-active: #29159c;
-    --tuning-part-selected: #3313e9;
-    --tuning-part-background-hover: linear-gradient(0deg, #583cfa18, transparent);
+    --tuning-part-to-select: #d4a843;
+    --tuning-part-to-select-hover: #a37f2a;
+    --tuning-part-to-select-active: #7a5f1f;
+    --tuning-part-selected: #d4a843;
+    --tuning-part-background-hover: linear-gradient(0deg, #d4a84318, transparent);
 
-    --tuning-part-border-color: #583cfa2c;
-    --tuning-part-border-color-hover: #583cfa18;
+    --tuning-part-border-color: #d4a8432c;
+    --tuning-part-border-color-hover: #d4a84318;
 
 
     --danger-color: #db2828b3;
     --danger-color-hover: #b62323b3;
     --danger-color-active: #711616b3;
 
-    --scrollbar-color: #573cfa;
-    --scrollbar-color-hover: #452ec7;
-    --scrollbar-background: #07070cfa;
+    --scrollbar-color: #d4a843;
+    --scrollbar-color-hover: #a37f2a;
+    --scrollbar-background: #0a0a0efa;
 
-    --installed-part-color: #3313e9;
+    --installed-part-color: #d4a843;
 
-    --menu-shadow-before-color: radial-gradient(circle, #6563e7b3 0%, rgba(255, 255, 255, 0) 70%);
-    --menu-shadow-after-color: radial-gradient(circle, #452ec7b3 0%, rgba(255, 255, 255, 0) 70%);
+    --menu-shadow-before-color: radial-gradient(circle, #d4a843b3 0%, rgba(255, 255, 255, 0) 70%);
+    --menu-shadow-after-color: radial-gradient(circle, #a37f2ab3 0%, rgba(255, 255, 255, 0) 70%);
 
-    --menu-background: #07070cfa;
-    --submenu-background: #4d51850f;
-    --submenu-background-selected: rgb(36 37 42 / 37%);
+    --menu-background: #0a0a0efa;
+    --submenu-background: #1a1a1a0f;
+    --submenu-background-selected: rgb(26 20 10 / 37%);
     --border-radius: 0.4em;
 
 }

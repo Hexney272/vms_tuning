@@ -7,22 +7,16 @@
         "sidebar": {
             "main_title": "Main",
             "main_description": "Home page, workshop information..",
-
             "missions_title": "Missions",
             "missions_description": "Earn extra money in missions..",
-            
             "employees_title": "Employees",
             "employees_description": "Manage your employees..",
-            
             "discounts_title": "Discounts",
             "discounts_description": "Discount codes for tunings..",
-            
             "boss_management_title": "Management",
             "boss_management_description": "Workshop management..",
-
             "resumes_title": "Resumes",
             "resumes_description": "Recruit new employees who have submitted resumes..",
-            
             "taxes_title": "Taxes",
             "taxes_description": "Pay your taxes, check your business status..."
         },
@@ -79,14 +73,12 @@
         "resumes": {
             "list_header": "List of resumes received from citizens.",
             "list_title": "Resumes list",
-
             "manage_header": "Manage the ability to send resumes.",
             "manage_title": "Manage applications",
             "manage_description": "Applications for your company are now:",
             "manage_description_not_active": "not active",
             "manage_description_active": "active",
             "manage_toggle_btn": "Toggle",
-
             "table_citizen": "Citizen Name",
             "table_date": "Date",
             "table_option": "Option"
@@ -1176,6 +1168,135 @@
             "receipt_pay_cash": "CONTANTI",
             "receipt_pay_bank": "BANCA",
             "receipt_cancel": "CANCELLA"
+        }
+    },
+    "HU": {
+        "menu_title": "Műhely kezelése",
+        "percentage": "%",
+        "quantity": "x",
+        "currency": "Ft",
+        "sidebar": {
+            "main_title": "Főoldal",
+            "main_description": "Kezdőlap, műhely információk..",
+            "missions_title": "Megrendelések",
+            "missions_description": "Keress extra pénzt megrendelésekkel..",
+            "employees_title": "Alkalmazottak",
+            "employees_description": "Alkalmazottak kezelése..",
+            "discounts_title": "Kedvezmények",
+            "discounts_description": "Kedvezménykódok tuningokhoz..",
+            "boss_management_title": "Menedzsment",
+            "boss_management_description": "Műhely kezelése..",
+            "resumes_title": "Önéletrajzok",
+            "resumes_description": "Új alkalmazottak toborzása..",
+            "taxes_title": "Adók",
+            "taxes_description": "Fizess adót, ellenőrizd a cég állapotát..."
+        },
+        "main": {
+            "menu_total_tuned_header": "Összes tunolt jármű:",
+            "menu_total_earned_header": "Összes bevétel:",
+            "menu_announcements_header": "Hírek",
+            "menu_announcements_title": "Közlemények"
+        },
+        "missions": {
+            "table_avatar": " ",
+            "table_name": "Név",
+            "table_reward": "Jutalom",
+            "table_option": "Művelet",
+            "accept_button": "Elvállal"
+        },
+        "employees": {
+            "table_employee": "Alkalmazott",
+            "table_grade": "Beosztás",
+            "table_option": "Művelet",
+            "menu_employees_no_players": "nincs játékos a közelben",
+            "menu_employees_header": "Alkalmazottak felvétele.",
+            "menu_employees_title": "Alkalmazottak",
+            "menu_employees_btn": "LEGKÖZELEBBI KERESÉSE",
+            "citizen": "Polgár {0}",
+            "menu_option_hire_btn": "Felvétel",
+            "menu_option_bonus_btn": "Bónusz",
+            "menu_option_setjob_btn": "Kinevezés: ",
+            "menu_option_fire_btn": "Elbocsátás"
+        },
+        "discounts": {
+            "table_discountcode": "Kedvezménykód",
+            "table_percentage": "Százalék",
+            "table_count": "Elérhető darab",
+            "table_option": "Művelet",
+            "copycode_button": "Kód másolása",
+            "copied_button": "Kód másolva!",
+            "menu_discounts_header": "Új kód generálása.",
+            "menu_discounts_title": "Kedvezménykódok",
+            "menu_discounts_btn": "KÓD LÉTREHOZÁSA",
+            "menu_select_percentage": "Százalék kiválasztása",
+            "menu_select_count": "Darabszám kiválasztása"
+        },
+        "management": {
+            "menu_balance_header": "Egyenleg:",
+            "menu_balance_btn_withdraw": "KIVÉTEL",
+            "menu_balance_btn_deposit": "BEFIZETÉS",
+            "menu_employees_header": "Alkalmazottak:",
+            "menu_employees_btn_manage": "KEZELÉS",
+            "menu_announcement_header": "Írj közleményt az alkalmazottaknak.",
+            "menu_announcement_title": "Közlemény",
+            "menu_announcement_btn_send": "KÜLDÉS"
+        },
+        "resumes": {
+            "list_header": "Beérkezett önéletrajzok listája.",
+            "list_title": "Önéletrajzok",
+            "manage_header": "Jelentkezések kezelése.",
+            "manage_title": "Jelentkezések kezelése",
+            "manage_description": "A cégedhez való jelentkezések jelenleg:",
+            "manage_description_not_active": "inaktív",
+            "manage_description_active": "aktív",
+            "manage_toggle_btn": "Váltás",
+            "table_citizen": "Polgár neve",
+            "table_date": "Dátum",
+            "table_option": "Művelet"
+        },
+        "taxes": {
+            "taxes_header": "Céges adók kezelése.",
+            "taxes_title": "Adók"
+        },
+        "tuningmenu": {
+            "tuning_header": "TUNING MŰHELY",
+            "list_header": "BESZERELHETŐ ALKATRÉSZEK",
+            "list_parts_left": "Hátralévő alkatrészek:",
+            "currency": "Ft",
+            "select_part": "Kiválaszt",
+            "selected_part": "Kiválasztva",
+            "selected_parts_header": "KIVÁLASZTOTT ALKATRÉSZEK",
+            "total_price": "ÖSSZESEN:",
+            "footer_selected_parts": "KIVÁLASZTOTT",
+            "footer_society": "CÉGES FIZETÉS",
+            "footer_cash": "KÉSZPÉNZ",
+            "footer_bank": "BANKKÁRTYA",
+            "footer_bill": "SZÁMLA",
+            "custom_plate_description1": "Használj 8 karaktert (A-Z, 0-9).",
+            "custom_plate_description2": "Kerüld a sértő szavakat.",
+            "custom_plate_save": "MENTÉS",
+            "custom_plate_reset": "VISSZAÁLLÍTÁS",
+            "discount_code_description": "Kedvezménykód megadása",
+            "discount_code_approved": "Alkalmazott kedvezmény: -",
+            "discount_code_declined": "A megadott kedvezménykód nem létezik.",
+            "discount_code_check": "Kód alkalmazása",
+            "discount_code_remove": "Kedvezmény törlése",
+            "stance_offset_front": "Első kerék eltolás",
+            "stance_offset_rear": "Hátsó kerék eltolás",
+            "stance_rotation_front": "Első kerék dőlés",
+            "stance_rotation_rear": "Hátsó kerék dőlés",
+            "suspension_height": "Futómű magasság",
+            "wheel_size": "Kerékméret",
+            "wheel_width": "Kerékszélesség"
+        },
+        "receipt": {
+            "receipt_header": "TUNING SZÁMLA",
+            "receipt_item": "TÉTEL",
+            "receipt_amount": "ÖSSZEG",
+            "receipt_total": "VÉGÖSSZEG",
+            "receipt_pay_cash": "KÉSZPÉNZ",
+            "receipt_pay_bank": "BANKKÁRTYA",
+            "receipt_cancel": "MÉGSE"
         }
     }
 }
